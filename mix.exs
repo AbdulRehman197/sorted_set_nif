@@ -25,7 +25,7 @@ defmodule SortedSet.MixProject do
   defp deps do
     [
       {:rustler, "~> 0.22.0"},
-      {:jemalloc_info, "~> 0.3", app: false},
+      {:jemalloc_info, git: "https://github.com/VitorTrin/jemalloc_info.git"},
       {:ex_doc, "~> 0.19", only: [:dev], runtime: false},
       {:benchee, "~> 1.0", only: [:dev]},
       {:benchee_html, "~> 1.0", only: [:dev]},
